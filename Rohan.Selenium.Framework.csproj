@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<PackageId>Rohan.Selenium.Framework</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Rohan Nzenwa-Jasons</Authors>
+		<PackageDescription>This is a light wrapper around the selenium library</PackageDescription>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+		<PackageReference Include="Selenium.Support" Version="4.4.0" />
+		<PackageReference Include="Selenium.WebDriver" Version="4.4.0" />
+		<PackageReference Include="WebDriverManager" Version="2.15.0" />
+	</ItemGroup>
+</Project>
