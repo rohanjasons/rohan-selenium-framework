@@ -38,7 +38,7 @@ jobs:
       run: dotnet restore $SOLUTION
 
     - name: Build
-      run: dotnet build $SOLUTION --configuration $BUILD_CONFIG -p:Version=1.2.$GITHUB_RUN_NUMBER 
+      run: dotnet build $SOLUTION --configuration $BUILD_CONFIG -p:Version=1.0.$GITHUB_RUN_NUMBER 
       
     - name: Publish
       run: nuget push **\*.nupkg -Source $NUGET_URL -ApiKey ${{secrets.ACTION_TOKEN}}
